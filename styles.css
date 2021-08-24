@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&display=swap);
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: safe center;
+  font-family: "Eczar", sans-serif;
+  color: #3d3d3d;
+  background-image: url(./images/sandie-clarke-mTWQ1j7D1YQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  --c: rgb(219, 219, 219, .5);
+  width: 400px;
+  border: 16px solid rgba(0, 0, 0, 0.3);
+  background-color: white;
+  background-clip: content-box;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding: 0.4rem 2rem;
+  font-size: 1.1rem;
+  position: relative;
+}
+ul li:not(:last-child) {
+  border-bottom: 1px solid var(--c);
+}
+ul li::before {
+  --d: 4px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  margin: auto 0;
+  display: inline-block;
+  width: var(--d);
+  height: var(--d);
+  background-color: black;
+  border-radius: 50%;
+}
+ul li:hover {
+  background-image: linear-gradient(to bottom, #f0f0f0, #eeeeee);
+}
+
+/*# sourceMappingURL=styles.css.map */
